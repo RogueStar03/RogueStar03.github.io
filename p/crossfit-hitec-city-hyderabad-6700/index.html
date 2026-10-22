@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CrossFit HITEC City | Gym &amp; fitness in Hyderabad</title>
+<meta name="description" content="Train harder, get stronger. Modern equipment, expert trainers and a motivating crowd.">
+<meta name="robots" content="noindex,nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --brand:#111827;
+  --accent:#f97316;
+  --brand-soft:#fff7ed;
+  --ink:#0f172a;
+  --muted:#475569;
+  --line:#e2e8f0;
+  --bg:#ffffff;
+  --bg-alt:#f8fafc;
+  --radius:18px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Poppins,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+img,svg{display:block}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+.ico{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex:none}
+
+/* preview banner */
+.pv{background:#111827;color:#f9fafb;font-size:13px;text-align:center;padding:9px 16px}
+.pv b{color:#fde68a;font-weight:600}
+.pv a{color:#93c5fd;text-decoration:underline;white-space:nowrap}
+.credit a{color:var(--brand);text-decoration:underline}
+
+/* header */
+header{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.92);backdrop-filter:saturate(180%) blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:17px;min-width:0}
+.logo span.t{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.mark{width:40px;height:40px;border-radius:12px;background:linear-gradient(135deg,var(--brand),var(--accent));color:#fff;display:grid;place-items:center;font-size:15px;font-weight:700;letter-spacing:.5px;flex:none}
+.links{display:flex;gap:26px;font-size:14px;color:var(--muted);font-weight:500}
+.links a:hover{color:var(--brand)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 20px;border-radius:999px;font-weight:600;font-size:15px;border:2px solid transparent;transition:transform .15s ease,box-shadow .15s ease;cursor:pointer;white-space:nowrap}
+.btn:hover{transform:translateY(-1px)}
+.btn-p{background:var(--brand);color:#fff;box-shadow:0 8px 20px -8px var(--brand)}
+.btn-w{background:#16a34a;color:#fff;box-shadow:0 8px 20px -8px #16a34a}
+.btn-o{border-color:var(--line);background:#fff;color:var(--ink)}
+.btn-sm{padding:9px 16px;font-size:14px}
+
+/* hero */
+.hero{position:relative;overflow:hidden;background:linear-gradient(160deg,var(--brand-soft) 0%,#fff 60%)}
+.hero:before{content:"";position:absolute;right:-120px;top:-120px;width:420px;height:420px;border-radius:50%;background:radial-gradient(circle,var(--accent) 0%,transparent 70%);opacity:.18}
+.hero-in{display:grid;grid-template-columns:1.25fr .9fr;gap:48px;align-items:center;padding:72px 20px 80px;position:relative}
+.pill{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--line);padding:6px 14px;border-radius:999px;font-size:13px;color:var(--muted);font-weight:500}
+.pill .ico{width:16px;height:16px;color:var(--brand)}
+h1{font-size:clamp(34px,5vw,54px);line-height:1.1;letter-spacing:-.02em;margin:18px 0 16px;font-weight:700}
+h1 em{font-style:normal;color:var(--brand)}
+.lead{font-size:18px;color:var(--muted);max-width:540px}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px;box-shadow:0 24px 50px -28px rgba(15,23,42,.25)}
+.card h3{font-size:16px;margin-bottom:14px;display:flex;align-items:center;gap:8px}
+.card h3 .ico{color:var(--brand)}
+.row{display:flex;gap:12px;align-items:flex-start;padding:12px 0;border-top:1px solid var(--line);font-size:14px}
+.row:first-of-type{border-top:0}
+.row .ico{color:var(--brand);margin-top:2px}
+.row small{display:block;color:var(--muted);font-size:12px}
+
+/* sections */
+section{padding:84px 0}
+.alt{background:var(--bg-alt)}
+.eyebrow{color:var(--brand);font-weight:600;font-size:13px;letter-spacing:.12em;text-transform:uppercase}
+h2{font-size:clamp(26px,3.4vw,36px);line-height:1.2;letter-spacing:-.01em;margin:8px 0 12px}
+.sub{color:var(--muted);max-width:620px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:40px}
+.svc{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:26px;transition:box-shadow .2s ease,transform .2s ease}
+.svc:hover{transform:translateY(-3px);box-shadow:0 20px 40px -24px rgba(15,23,42,.3)}
+.svc .bub{width:48px;height:48px;border-radius:14px;background:var(--brand-soft);color:var(--brand);display:grid;place-items:center;margin-bottom:16px}
+.svc .bub .ico{width:24px;height:24px}
+.svc h3{font-size:17px;margin-bottom:6px}
+.svc p{color:var(--muted);font-size:14px}
+.why{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:40px}
+.why div{display:flex;flex-direction:column;gap:10px}
+.why .ico{width:28px;height:28px;color:var(--accent)}
+.why h4{font-size:16px}
+.why p{color:var(--muted);font-size:14px}
+.visit{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:40px}
+table{width:100%;border-collapse:collapse;font-size:15px}
+td{padding:10px 0;border-bottom:1px dashed var(--line)}
+td:last-child{text-align:right;color:var(--muted)}
+.band{background:linear-gradient(135deg,var(--brand),var(--accent));color:#fff;border-radius:28px;padding:52px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap}
+.band h2{color:#fff;margin:0}
+.band p{opacity:.9}
+.band .btn-o{border-color:rgba(255,255,255,.6);background:transparent;color:#fff}
+.band .btn-light{background:#fff;color:var(--brand)}
+.hero-img{width:100%;height:230px;object-fit:cover;border-radius:var(--radius);margin-bottom:16px;box-shadow:0 24px 50px -28px rgba(15,23,42,.35)}
+.gal{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:32px}
+.gal img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:14px}
+.prices{max-width:640px;margin-top:32px}
+.prices td:last-child{color:var(--brand);font-weight:600}
+.soc{display:flex;gap:14px;margin-top:10px}
+.soc a{color:var(--brand);font-weight:600}
+footer{padding:40px 0 110px;border-top:1px solid var(--line);font-size:14px;color:var(--muted)}
+.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.credit{margin-top:18px;font-size:12px;opacity:.8}
+
+/* mobile action bar */
+.mbar{display:none;position:fixed;left:0;right:0;bottom:0;z-index:50;background:#fff;border-top:1px solid var(--line);padding:10px 12px calc(10px + env(safe-area-inset-bottom));gap:8px}
+.mbar a{flex:1;display:flex;flex-direction:column;align-items:center;gap:2px;font-size:12px;font-weight:600;padding:6px;border-radius:12px}
+.mbar a.c{background:var(--brand);color:#fff}
+.mbar a.w{background:#16a34a;color:#fff}
+.mbar a.d{background:var(--bg-alt)}
+
+/* chat assistant */
+.chat-fab{position:fixed;right:22px;bottom:22px;z-index:60;width:60px;height:60px;border-radius:50%;background:var(--brand);color:#fff;border:0;display:grid;place-items:center;cursor:pointer;box-shadow:0 14px 30px -10px var(--brand)}
+.chat-fab .ico{width:26px;height:26px}
+.chat-fab .dot{position:absolute;top:6px;right:6px;width:12px;height:12px;border-radius:50%;background:#22c55e;border:2px solid #fff}
+.chat{position:fixed;right:22px;bottom:94px;z-index:60;width:360px;max-width:calc(100vw - 32px);height:500px;max-height:calc(100vh - 140px);background:#fff;border-radius:20px;box-shadow:0 30px 60px -20px rgba(15,23,42,.45);display:none;flex-direction:column;overflow:hidden;border:1px solid var(--line)}
+.chat.open{display:flex}
+.chat-h{background:linear-gradient(135deg,var(--brand),var(--accent));color:#fff;padding:16px 18px;display:flex;align-items:center;gap:12px}
+.chat-h .mark{background:rgba(255,255,255,.2);width:38px;height:38px}
+.chat-h b{display:block;font-size:15px}
+.chat-h small{opacity:.85;font-size:12px}
+.chat-h button{margin-left:auto;background:transparent;border:0;color:#fff;font-size:24px;cursor:pointer;line-height:1}
+.chat-b{flex:1;overflow-y:auto;padding:16px;display:flex;flex-direction:column;gap:10px;background:var(--bg-alt)}
+.msg{max-width:85%;padding:10px 14px;border-radius:16px;font-size:14px;line-height:1.5;white-space:pre-line}
+.msg.bot{background:#fff;border:1px solid var(--line);border-bottom-left-radius:4px;align-self:flex-start}
+.msg.me{background:var(--brand);color:#fff;border-bottom-right-radius:4px;align-self:flex-end}
+.msg a{color:#16a34a;font-weight:600;text-decoration:underline}
+.chips{display:flex;flex-wrap:wrap;gap:6px;padding:10px 14px;border-top:1px solid var(--line);background:#fff}
+.chips button{border:1px solid var(--line);background:#fff;border-radius:999px;padding:6px 12px;font:500 12px Poppins,sans-serif;cursor:pointer;color:var(--ink)}
+.chips button:hover{border-color:var(--brand);color:var(--brand)}
+.chat-f{display:flex;gap:8px;padding:12px;border-top:1px solid var(--line);background:#fff}
+.chat-f input{flex:1;border:1px solid var(--line);border-radius:999px;padding:10px 14px;font:14px Poppins,sans-serif;outline:none}
+.chat-f input:focus{border-color:var(--brand)}
+.chat-f button{border:0;background:var(--brand);color:#fff;border-radius:999px;padding:0 16px;font:600 14px Poppins,sans-serif;cursor:pointer}
+
+@media (max-width:900px){
+  .hero-in{grid-template-columns:1fr;padding:48px 20px 56px;gap:32px}
+  .grid{grid-template-columns:1fr 1fr}
+  .why{grid-template-columns:1fr 1fr}
+  .visit{grid-template-columns:1fr}
+  .links{display:none}
+}
+@media (max-width:600px){
+  .grid,.why{grid-template-columns:1fr}
+  .gal{grid-template-columns:1fr 1fr}
+  .hero-img{height:190px}
+  section{padding:60px 0}
+  .band{padding:32px 24px;border-radius:22px}
+  .nav .btn{display:none}
+  .mbar{display:flex}
+  .chat-fab{bottom:86px;right:16px;width:54px;height:54px}
+  .chat{bottom:150px;right:16px}
+  .lead{font-size:16px}
+}
+</style>
+</head>
+<body>
+<div class="pv">Sample website made for <b>CrossFit HITEC City</b> by <b>Abhishek</b>. Not the official website yet. <b>Like it?</b> Make it yours for ₹1,999. Contact: <a href="mailto:abhishekkayasth87@gmail.com">abhishekkayasth87@gmail.com</a> · <a href="https://www.linkedin.com/in/abhishek-kayasth-050250239/" target="_blank" rel="noopener">LinkedIn</a></div>
+<header>
+  <div class="wrap nav">
+    <a href="#top" class="logo"><span class="mark">CH</span><span class="t">CrossFit HITEC City</span></a>
+    <nav class="links"><a href="#services">Programs</a><a href="#why">Why us</a><a href="#visit">Visit</a><a href="#contact">Contact</a></nav>
+    <a class="btn btn-p btn-sm" href="tel:+919811176700"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg> Call now</a>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap hero-in">
+      <div>
+        <span class="pill"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Gym &amp; fitness · Hyderabad</span>
+        <h1>CrossFit HITEC City</h1>
+        <p class="lead">Train harder, get stronger. Modern equipment, expert trainers and a motivating crowd.</p>
+        <div class="cta">
+          <a class="btn btn-p" href="tel:+919811176700"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg> Call +91 98111 76700</a>
+          <a class="btn btn-w" href="https://wa.me/919811176700?text=Hi%20CrossFit%20HITEC%20City%21%20I%20found%20you%20on%20your%20website%20and%20would%20like%20to%20know%20more." target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg> WhatsApp us</a>
+          <a class="btn btn-o" href="https://www.google.com/maps/search/?api=1&amp;query=CrossFit%20HITEC%20City%2C%20Survey%20Number%2064/2%2C%20First%20Floor%2C%20East%20Wing%2C%20Block%20A%2C%20International%20Tech%20Park%20Hyderabad%20Plot%20Number%2017" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg> Directions</a>
+        </div>
+      </div>
+      <div><div class="card">
+        <h3><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Quick info</h3>
+        <div class="row"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><div><small>Timings</small>Call to confirm</div></div>
+        <div class="row"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><div><small>Address</small>Survey Number 64/2, First Floor, East Wing, Block A, International Tech Park Hyderabad Plot Number 17</div></div>
+        <div class="row"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><div><small>Phone / WhatsApp</small>+91 98111 76700</div></div>
+      </div></div>
+    </div>
+  </div>
+
+  <section id="services">
+    <div class="wrap">
+      <span class="eyebrow">Programs</span>
+      <h2>Everything you need to get fit</h2>
+      <p class="sub">Whether you&#x27;re starting out or levelling up, we have a plan for you.</p>
+      <div class="grid"><div class="svc"><div class="bub"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg></div><h3>Strength training</h3><p>Free weights and machines for every muscle group.</p></div><div class="svc"><div class="bub"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div><h3>Cardio zone</h3><p>Treadmills, cycles and cross-trainers.</p></div><div class="svc"><div class="bub"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div><h3>Personal training</h3><p>One-on-one coaching for faster results.</p></div><div class="svc"><div class="bub"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div><h3>Weight loss plans</h3><p>Workout and diet guidance that works.</p></div><div class="svc"><div class="bub"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg></div><h3>Group classes</h3><p>High-energy sessions to keep you going.</p></div><div class="svc"><div class="bub"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></div><h3>Flexible memberships</h3><p>Monthly, quarterly and yearly plans.</p></div></div>
+    </div>
+  </section>
+
+
+  <section id="why" class="alt">
+    <div class="wrap">
+      <span class="eyebrow">Why choose us</span>
+      <h2>Why train with us</h2>
+      <div class="why"><div><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg><h4>Certified trainers</h4><p>Guidance on form and progress.</p></div><div><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg><h4>Modern equipment</h4><p>Well-maintained machines.</p></div><div><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><h4>Long hours</h4><p>Train early or late.</p></div><div><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg><h4>Great community</h4><p>Stay motivated together.</p></div></div>
+    </div>
+  </section>
+
+  <section id="visit">
+    <div class="wrap">
+      <span class="eyebrow">Visit us</span>
+      <h2>Timings &amp; location</h2>
+      <div class="visit">
+        <div class="card">
+          <h3><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Opening hours</h3>
+          <table><tr><td>Timings</td><td>Call to confirm</td></tr></table>
+        </div>
+        <div class="card">
+          <h3><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Find us</h3>
+          <p style="color:var(--muted);margin-bottom:20px">Survey Number 64/2, First Floor, East Wing, Block A, International Tech Park Hyderabad Plot Number 17</p>
+          <div class="cta" style="margin-top:0">
+            <a class="btn btn-p" href="https://www.google.com/maps/search/?api=1&amp;query=CrossFit%20HITEC%20City%2C%20Survey%20Number%2064/2%2C%20First%20Floor%2C%20East%20Wing%2C%20Block%20A%2C%20International%20Tech%20Park%20Hyderabad%20Plot%20Number%2017" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg> Get directions</a>
+            <a class="btn btn-o" href="tel:+919811176700"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg> Call</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" style="padding-top:0">
+    <div class="wrap">
+      <div class="band">
+        <div>
+          <h2>Start your fitness journey</h2>
+          <p>Message us to know about membership plans and a trial session.</p>
+        </div>
+        <div class="cta" style="margin-top:0">
+          <a class="btn btn-light" href="tel:+919811176700"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg> Call now</a>
+          <a class="btn btn-o" href="https://wa.me/919811176700?text=Hi%20CrossFit%20HITEC%20City%21%20I%20found%20you%20on%20your%20website%20and%20would%20like%20to%20know%20more." target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg> WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <div><b style="color:var(--ink)">CrossFit HITEC City</b><br>Survey Number 64/2, First Floor, East Wing, Block A, International Tech Park Hyderabad Plot Number 17<p class="soc"><a href="https://www.facebook.com/253639967836227" target="_blank" rel="noopener">Facebook</a></p></div>
+      <div>+91 98111 76700<br>&copy; 2026 CrossFit HITEC City</div>
+    </div>
+    <p class="credit">Sample website by Abhishek, Software Developer · <a href="mailto:abhishekkayasth87@gmail.com">abhishekkayasth87@gmail.com</a> · <a href="https://www.linkedin.com/in/abhishek-kayasth-050250239/" target="_blank" rel="noopener">LinkedIn</a></p>
+  </div>
+</footer>
+
+<nav class="mbar">
+  <a class="c" href="tel:+919811176700"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>Call</a>
+  <a class="w" href="https://wa.me/919811176700?text=Hi%20CrossFit%20HITEC%20City%21%20I%20found%20you%20on%20your%20website%20and%20would%20like%20to%20know%20more." target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>WhatsApp</a>
+  <a class="d" href="https://www.google.com/maps/search/?api=1&amp;query=CrossFit%20HITEC%20City%2C%20Survey%20Number%2064/2%2C%20First%20Floor%2C%20East%20Wing%2C%20Block%20A%2C%20International%20Tech%20Park%20Hyderabad%20Plot%20Number%2017" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>Directions</a>
+</nav>
+
+<button class="chat-fab" id="chatFab" aria-label="Open chat"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg><span class="dot"></span></button>
+<div class="chat" id="chat" role="dialog" aria-label="Chat assistant">
+  <div class="chat-h">
+    <span class="mark">CH</span>
+    <div><b>CrossFit HITEC City</b><small>Usually replies instantly</small></div>
+    <button id="chatClose" aria-label="Close chat">&times;</button>
+  </div>
+  <div class="chat-b" id="chatBody"></div>
+  <div class="chips" id="chatChips"></div>
+  <form class="chat-f" id="chatForm"><input id="chatIn" placeholder="Type your question..." autocomplete="off"><button>Send</button></form>
+</div>
+
+<script>
+(function(){
+  var FAQ = [{"q": "What are the membership fees?", "k": ["fee", "fees", "price", "membership", "plan", "cost", "monthly", "kitna"], "a": "We have monthly, quarterly and yearly plans. WhatsApp us at +91 98111 76700 for current offers."}, {"q": "Can I get a trial session?", "k": ["trial", "free", "demo", "try"], "a": "Message us on WhatsApp at +91 98111 76700 to ask about a trial visit."}, {"q": "Do you have personal trainers?", "k": ["trainer", "personal", "coach", "pt"], "a": "Yes, personal training is available. Message us for packages."}, {"q": "What are your timings?", "k": ["timing", "time", "open", "close", "hour", "today", "sunday", "kab"], "a": "Our timings: please call us to confirm today's timings\nYou can also call us on +91 98111 76700 before visiting."}, {"q": "Where are you located?", "k": ["where", "location", "address", "direction", "reach", "map", "kaha", "kahan"], "a": "We're at Survey Number 64/2, First Floor, East Wing, Block A, International Tech Park Hyderabad Plot Number 17.\nTap 'Directions' on this page to open Google Maps."}, {"q": "How do I contact you?", "k": ["contact", "call", "number", "phone", "whatsapp"], "a": "Call or WhatsApp us on +91 98111 76700. We usually reply within minutes during working hours."}, {"q": "Do you accept UPI?", "k": ["upi", "payment", "pay", "gpay", "phonepe", "paytm", "card", "cash"], "a": "Please confirm payment options with us on WhatsApp at +91 98111 76700. Most visitors pay by UPI or cash."}];
+  var WA = "https://wa.me/919811176700";
+  var GREETING = "Hi! 👋 Welcome to CrossFit HITEC City. Ask me anything, or tap a question below.";
+  var body = document.getElementById('chatBody'), chat = document.getElementById('chat');
+  var chips = document.getElementById('chatChips'), input = document.getElementById('chatIn');
+  var started = false;
+
+  function add(text, who, html){
+    var d = document.createElement('div');
+    d.className = 'msg ' + who;
+    if (html) d.innerHTML = text; else d.textContent = text;
+    body.appendChild(d);
+    body.scrollTop = body.scrollHeight;
+  }
+  function waLink(q){
+    return WA + '?text=' + encodeURIComponent('Hi! ' + (q ? 'I have a question: ' + q : 'I would like to know more.'));
+  }
+  function norm(s){ return s.toLowerCase().replace(/[^a-z0-9ऀ-ॿ ]/g, ' '); }
+  function answer(q){
+    var t = ' ' + norm(q) + ' ', best = null, score = 0;
+    FAQ.forEach(function(f){
+      var s = 0;
+      f.k.forEach(function(k){ if (t.indexOf(' ' + k) !== -1) s += k.length > 3 ? 2 : 1; });
+      if (s > score){ score = s; best = f; }
+    });
+    setTimeout(function(){
+      if (best) add(best.a, 'bot');
+      else add('Good question! Our team can answer that directly. <a href="' + waLink(q) + '" target="_blank" rel="noopener">Chat with us on WhatsApp &rarr;</a>', 'bot', true);
+    }, 450);
+  }
+  function chipsInit(){
+    FAQ.slice(0, 5).forEach(function(f){
+      var b = document.createElement('button');
+      b.type = 'button'; b.textContent = f.q;
+      b.onclick = function(){ add(f.q, 'me'); answer(f.q); };
+      chips.appendChild(b);
+    });
+  }
+  function open(){
+    chat.classList.add('open');
+    if (!started){ started = true; add(GREETING, 'bot'); chipsInit(); }
+    input.focus();
+  }
+  document.getElementById('chatFab').onclick = function(){ chat.classList.contains('open') ? chat.classList.remove('open') : open(); };
+  document.getElementById('chatClose').onclick = function(){ chat.classList.remove('open'); };
+  document.getElementById('chatForm').onsubmit = function(e){
+    e.preventDefault();
+    var q = input.value.trim(); if (!q) return;
+    add(q, 'me'); input.value = ''; answer(q);
+  };
+})();
+</script>
+</body>
+</html>
